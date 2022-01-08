@@ -1,0 +1,8 @@
+---
+# tasks file for firewall-ubuntu
+
+- name: Stop Firewall
+  service:
+    name: ufw
+    state: stopped
+    enabled: no
